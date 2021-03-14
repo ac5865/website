@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Share+Tech+Mono&display=swap');
+ 
+/*----global styles------*/
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: "Share Tech Mono", monospace;
+    font-size:12px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: #e7e7e7;
+    background-color: rgb(19, 19, 19);
+}
+
+a{
+    text-decoration: none;
+    color:rgb(3, 155, 155);
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height:auto;
+}
+
+/*-------header-----------*/
+.nav{
+    background:black;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{    
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color:#e7e7e7;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-brand a{
+    color:#e7e7e7;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: "Share Tech Mono",monospace;
+}
+
+.nav .nav-items .nav-link a{
+    color: #e7e7e7;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: #133b5c;
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: #fcdab7;
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: "Share Tech Mono",monospace;
+    font-size: 1.6rem;
+}
+
+.nav .nav-items .nav-right{
+    display: flex;
+    float:right;
+}
+
+.nav .social{
+    /* padding: 1.4rem 0; */
+    float:right;
+}
+
+.nav .social i{
+    /* padding: 0 .2rem; */
+    color: #fcdab7;
+    
+}
+
+.nav .social i:hover{
+    color: #61cbeb;
+}
+
+/*----landing page-----*/
+.landing-page{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        rgba(0,64,77,0.9)0%,
+        rgba(0,0,0,0.8)100%
+    ),
+    url("pictures/mike-yukhtenko-wfh8dDlNFOk-unsplash.jpg") center no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.main-message{
+    width:100%;
+    max-width: 58rem;
+    text-transform: uppercase;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-message h2 {
+    letter-spacing: 0.6rem;
+    font-size: 2rem;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 10s steps(27), blink 1s ease-in-out 7s infinite;
+    width: 27ch;
+    margin: auto;
+    border-right: 4px solid rgba(255, 255, 255, 1);
+  }
+  
+  @keyframes typing {
+    75% {
+      width: 0ch;
+      color: rgba(249, 105, 14, 1);
+    }
+    100% {
+      width: 27ch;
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      border-right: 4px solid rgba(255, 255, 255, 0);
+    }
+    100% {
+      border-right: 4px solid rgb(194, 194, 194);
+    }
+  }
+
+  .main-message h3{
+      font-size: 3rem;
+      margin:1rem 0;
+      color:#cceecc;
+  }
+
+  .intro-btn{
+      display:flex;
+      justify-content: center;
+  }
+
+  .btn{
+      margin:0 9px;
+      background:rgb(55,236,236);
+      border-radius: 2rem;
+      color:#222222;
+      font-size: 1.3rem;
+      padding: 1rem 2.5rem;
+      display: inline-block;
+      margin-top: 0.5 rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+
+  .btn:hover{
+      color: #222222;
+      background-color: #cceecc;
+  }
+
+  .scroll-down i{
+      color:#cceecc;
+      margin-top: 1rem;
+      font-size: 2.5rem;
+  }
+
+  .scroll-down i:hover{
+      color: teal;
+  }
+
+  .about{
+      widows: 100%;
+      min-height: 100vh;
+      max-width: 70rem;
+      margin:auto;
+  }
+
+  .about .container{
+      display: flex;
+      align-items: center;
+      min-height: 80vh;
+  }
+
+  .about-img img{
+      height:15rem;
+      width:auto;
+      border-radius: 50%;
+      margin:1.5rem;
+
+  }
+
+  .about-text{
+      flex-grow:1;
+      flex-shrink: 1;
+      flex-basis: 0;
+  }
+
+  .about-text h2{
+      font-size: 3rem;
+      margin-bottom: 20px;
+  }
+
+  .about-text p{
+      font-family: "Poppins", sans-serif;
+      font-size: 1.4rem;
+      padding: 0;
+      margin-bottom: 1.5rem;
+  }
+
+  hr{
+      margin:4rem 0;
+      background-color: teal;
+      border: 0;
+      height: 1px;
+  }
+
+  /*------skills-----*/
+  .skills{
+      padding: 3rem 0;
+      min-height: 100vh;
+      max-width: 90rem;
+      margin:auto;
+  }
+
+  .title-heading{
+      text-align: center;
+      margin-bottom: 5rem;
+  }
+
+  .title-heading h2{
+      font-size: 3rem;
+      margin:0.5rem 0 1rem 0;
+  }
+
+  .title-heading p{
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 5rem;
+      
+  }
+
+  .skills-teir{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+      gap:2.5rem;
+  }
+
+  .teir-item{
+      height:20rem;
+      padding: 3rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+     
+      cursor: default;
+  }
+
+  .teir-item i{
+      font-size: 3.5rem;
+  }
+
+  .teir-item h2{
+      font-size: 2rem;
+      margin:2rem 0;
+      color: teal;
+  }
+
+  .teir-item p{
+      font-family: "Poppins", sans-serif;
+      font-size: 1.4rem;
+  }
+
+  /*------projects------*/
+  .projects{
+      padding:3rem 0;
+      min-height: 100vh;
+      max-width: 70rem;
+      margin:auto;
+  }
+
+  .has-margin-right{
+      margin: 0 3rem 0 0;
+  }
+
+  .project-item{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 1.5rem 5rem 1.5rem;
+  }
+
+  .project-img{
+      flex: 1;
+  }
+
+  .project-description{
+      flex:1;
+  }
+
+  .project-description h2{
+      font-size: 2rem;
+      color: teal;
+      margin:2rem 0;
+  }
+
+  .project-description p{
+      font-family: "Poppins", sans-serif;
+      font-size: 1.5rem;
+  }
+
+  .project-link{
+      display:inline-block;
+      margin:2rem 0;
+      font-size: 1.4rem;
+  }
+
+  /*-------contact------*/
+  .contact{
+      width:100%;
+      min-height: 30vh;
+      max-width: 70rem;
+      margin:auto;
+  }
+
+  .contact h2{
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+  }
+
+  .contact p{
+      font-family: "Poppins",sans-serif;
+      font-size: 1.4rem;
+      padding:0;
+      margin:0.8rem 2rem;
+      text-align: center;
+  }
+
+  .contact .container{
+      min-height: 5vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  footer{
+      width: 100%;
+      max-width: 70rem;
+      margin:auto;
+      padding: 0.5rem;
+      color:grey;
+      text-align: center;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+  }
+
+  .footer a{
+      margin:0 0.2rem;
+  }
+
+  .footer-coded-by{
+      margin:2rem 0;
+  }
+
+  /*-------responsive------*/
+  @media (max-width: 750px) {
+    .main-message h3 {
+      font-size: 3rem;
+    }
+    .about .container {
+      flex-direction: column;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    .title-heading {
+      margin: 0;
+    }
+  
+    .services-tiers {
+      gap: 0;
+    }
+    .project-item {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem;
+      box-shadow: 0 20px 30px 0 rgba(212, 255, 255, 0.15);
+    }
+    .project-img {
+      width: 20rem;
+    }
+  }
+  
+  @media (max-width: 665px) {
+    .main-message {
+      top: 55%;
+    }
+    .main-message h2 {
+      letter-spacing: 1rem;
+      font-size: 1.5rem;
+      width: 29ch;
+    }
+  
+    .main-message h3 {
+      font-size: 2rem;
+    }
+  
+    .main-message p {
+      font-size: 1.3rem;
+    }
+    .btn {
+      border-radius: 0.9rem;
+      padding: 0.9rem 0.9rem;
+    }
+    .about-text-box h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .about-text-box p {
+      margin: 0 0 2.45rem;
+    }
+  
+    .title-heading h2 {
+      margin-bottom: 2rem;
+    }
+    .title-heading p {
+      font-size: 1.3rem;
+    }
+  
+    .contact .container {
+      flex-direction: column;
+    }
+  
+    footer,
+    footer p {
+      font-size: 1.2rem;
+    }
+  }
